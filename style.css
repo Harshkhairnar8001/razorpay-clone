@@ -105,3 +105,25 @@ nav .nav-links a {
     border-radius: 5px;
     margin-top: 10px;
 }
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}

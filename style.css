@@ -127,3 +127,67 @@ nav .nav-links a {
     font-size: 16px;
     color: #555;
 }
+/* Pricing Section */
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #f4f7ff;
+}
+
+.pricing-plan {
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.pricing-plan h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.pricing-plan p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.pricing-plan .cta-btn {
+    background-color: #4c9aff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+/* Footer Section */
+footer {
+    background-color: #02042a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-links li {
+    margin-left: 15px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}

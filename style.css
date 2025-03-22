@@ -191,3 +191,99 @@ footer .footer-links a {
     text-decoration: none;
     font-size: 14px;
 }
+html {
+    scroll-behavior: smooth;
+}
+.cta-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #3c8dff;
+    transform: scale(1.05);
+}
+nav .nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4c9aff;
+    transition: width 0.3s ease;
+}
+
+nav .nav-links a:hover::after {
+    width: 100%;
+}
+/* Hero Section */
+.hero {
+    background: linear-gradient(45deg, #4c9aff, #02042a);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.cta-btn {
+    background-color: #4c9aff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    nav .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .feature, .pricing-plan {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
